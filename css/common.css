@@ -1,0 +1,32 @@
+	body {
+	  background-color: DodgerBlue;
+	  display: grid;
+	  height: 100vh;
+	  margin: 0;
+	  /*place-items: center center;*/
+	}
+
+	.titulo_principal {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 70px;
+		background-color: black;
+	}
+
+	.mensajes {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 30px;
+		background-color: grey;
+	}
+
+	.workarea {
+		height: calc(100vh - 100px);
+		/* background-color: green; */
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
