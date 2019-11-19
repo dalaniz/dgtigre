@@ -12,7 +12,7 @@ if (!$usuario  or !$pwd )
 // creo el objeto de conexion
 $pdo = new PDO($dsn, $user, $passwd);
 // preparo la sentencia sql - "stmt es la abreviatura de statement"
-$stmt = $pdo->prepare("SELECT id FROM usuario_ex where usuario = :usuario and pwd = :pwd");
+$stmt = $pdo->prepare("SELECT * FROM usuario_ex where usuario = :usuario and pwd = :pwd");
 // ejecuta la sentencia pasando los parametros reemplazando en :usuario y :pwd
 $stmt->execute(array('usuario' => $usuario, 'pwd' => $pwd));
 // obtiene un array con la siguiente fila disponible de los resultados del execute().
@@ -27,5 +27,6 @@ if ( !$row ) {  // si no hubo resultado
 }
 // dado que vino un resultado, el usuario existe. Lo incorporo a la session  
 session_start();
+$row[tipo] = 'ejemplo'; // tipo usuario ejemplo lo agrego al array que vino de resultado desde base de datos
 $_SESSION["user"] = $row; // agrego el array con los datos del usuario en la sesion.
-header('Location: menu.php?msg='); // como está todo ok lo redirecciono al menu principal para que muestre sus opciones
+header('Location: bienvenido.php?msg='); // como está todo ok lo redirecciono al menu principal para que muestre sus opciones

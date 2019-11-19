@@ -9,26 +9,6 @@ session_destroy(); // limpia lo que hubiera en la session
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/common.css" type="text/css" />
 
-<style>
-	.opcion-login {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		height: 100px;
-		width: 180px;
-		background-color: black;
-		color: DodgerBlue; 
-		font-size: 20px; 
-		font-weight: bold;
-		border-radius: 25px;
-	}
-	.opcion-login:hover {
-		background-color: #d8d0d0;		
-	}
-</style>
-
-
 </head>
 
 <body>

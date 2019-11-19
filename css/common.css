@@ -6,6 +6,23 @@
 	  /*place-items: center center;*/
 	}
 
+	.opcion-login {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100px;
+		width: 180px;
+		background-color: black;
+		color: DodgerBlue; 
+		font-size: 20px; 
+		font-weight: bold;
+		border-radius: 25px;
+	}
+	.opcion-login:hover {
+		background-color: #d8d0d0;		
+	}
+	
 	.titulo_principal {
 		display: flex;
 		justify-content: center;
@@ -14,6 +31,34 @@
 		background-color: black;
 	}
 
+	.menu {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		height: 50px;
+		background-color: black;
+	}
+
+	.menu_option {
+		display: flex; 
+		flex-direction: column;
+		justify-content: center; 
+		align-items: center;
+		height: 50px;
+		/*width: 250px;*/
+		background-color: #06529a;
+		color: black; 
+		font-size: 20px; 
+		font-weight: bold;
+		border-radius: 15px;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin:20px;
+	}
+	.menu_option:hover {
+		background-color: #d8d0d0;		
+	}
+	
 	.mensajes {
 		display: flex;
 		justify-content: center;

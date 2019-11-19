@@ -1,8 +1,4 @@
 <?php
-session_start();
-session_destroy();
-session_start();
-$_SESSION["user"]["tipo"] = 0;
 $msg = isset($_GET['msg']) ? $_GET['msg'] : ""; 
 ?>
 <!DOCTYPE html>
