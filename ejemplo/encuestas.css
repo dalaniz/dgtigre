@@ -1,9 +1,9 @@
-html {
+html_ {
   font-size: 14px;
   overflow-y: scroll;
   overflow-x: auto;
 }
-body {
+body_ {
   background-color: #ddd;
   font-family: 'Oxygen', Arial, Helvetica, sans-serif;
   font-size: 1rem;
@@ -12,7 +12,7 @@ body {
 }
 
 /* General -------------------------------------------------------------------------------------- */
-* {
+*_ {
   padding: 0;
   border: 0;
   outline: 0;
@@ -152,9 +152,9 @@ button.button:active {
 .dataTables_length {
   width: auto;
   height: 30px;
-  position: absolute;
-  top: 0;
-  left: 0;
+  /*position: absolute;*/
+  /* top: 0; */
+  /* left: 0; */
   padding: 0 110px 0 0;
 }
 .dataTables_length label {
@@ -164,9 +164,9 @@ button.button:active {
 .dataTables_length select {
   width: 100px;
   height: 30px;
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  right: 0;
+  right: 0; */
   background-color: #fff;
   color: #666;
   padding: 0 50px 0 10px;
@@ -174,7 +174,7 @@ button.button:active {
   -webkit-border-radius: 6px;
   -moz-border-radius:    6px;
   border-radius:         6px;
-  margin: 0;
+  /*margin: 0;*/
 }
 .dataTables_length:after {
   width: 30px;
@@ -370,7 +370,7 @@ table.datatable tbody td.functions .function_buttons span {
 }
 
 /* Lightbox ------------------------------------------------------------------------------------- */
-.lightbox_bg {
+.lightbox_bg_ {
   display: none;
   width: 100%;
   height: 100%;
@@ -383,7 +383,7 @@ table.datatable tbody td.functions .function_buttons span {
   cursor: pointer;
 }
 
-.lightbox_container {
+.lightbox_container_ {
   display: none;
   width: 80%;
   height: 90%;
@@ -404,7 +404,7 @@ table.datatable tbody td.functions .function_buttons span {
   border-radius:         6px;
 }
 
-.lightbox_close {
+.lightbox_close_ {
   width: 35px;
   height: 35px;
   position: absolute;

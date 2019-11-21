@@ -75,3 +75,13 @@
 		justify-content: space-around;
 		align-items: center;
 	}
+
+	.workarea_v {
+		height: calc(100vh - 100px);
+		/* background-color: green; */
+		display: flex;
+		flex-direction: col;
+		justify-content: space-around;
+		align-items: center;
+	}
+	
