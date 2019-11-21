@@ -39,7 +39,7 @@ session_destroy(); // limpia lo que hubiera en la session
 		<label>INGRESO</label>
 		<label>sanchez</label>
 	</div>
-	<div class="opcion-login" onclick='window.location.href = "ivan salto/login.php";'>
+	<div class="opcion-login" onclick='window.location.href = "ivansalto/login.php";'>
 		<label>INGRESO</label>
 		<label>Ivan Salto</label>
 	</div>
