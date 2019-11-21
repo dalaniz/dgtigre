@@ -91,7 +91,7 @@ a:hover {
 	<div class="cuadro-login">
 		<label style="height: 40px; background-color: #eb1368; color: black; font-size:20px; font-weight:bold;">INGRESO</label>
 		
-		<label style="color:black">Usuarioooo</label>
+		<label style="color:black">Usuario</label>
 		<input style="border-radius:50px" type="text" id="user" name="user" />
 		<label style="color:black">Contrase&ntilde;a</label>
 		<input style="border-radius:50px" type="password" id="pwd" name="pwd"/>
