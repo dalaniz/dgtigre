@@ -11,42 +11,50 @@ $msg = "";
     <!--meta name="viewport" content="width=1000, initial-scale=1"-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../css/common.css" type="text/css" />
-	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" type="text/css" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oxygen:400,700">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	
-	
 
-    <!--script charset="utf-8" src="https://code.jquery.com/jquery-3.3.1.js"></script-->
-    <script charset="utf-8" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- script charset="utf-8" src="//cdn.datatables.net/1.10.0/js/jquery.dataTables.js"></script -->
-    <script charset="utf-8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
-    
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	
     <script charset="utf-8" src="//cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.min.js"></script>
     <script charset="utf-8" src="encuestas.js"></script>
-  </head>
+
+ <script type="text/javascript" class="init">
+  $(document).ready(function() {
+    $('#example').DataTable();
+	} );
+  </script>
+  
+	</head>
   <body>
+
 
 	<?php include_once("menu.php"); ?>
 <div class="workarea_v">  
-
-      <table class="display" id="tabla_encuestas">
+<div style="background-color: #d8d0d0;"> 
+<table id="example" class="display" style="width:100%">
         <thead>
-          <tr>
-            <th>#Id</th>
-            <th>Nombre</th>
-            <th>Descripci&oacute;n</th>
-          </tr>
+            <tr>
+                <th>#Id</th>
+                <th>Nombre</th>
+                <th>Descripci&oacute;n</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
                 <td>1</td>
-                <td>Encuesta satisfaccion</td>
-                <td>Esta encuesta consulta / evalua............</td>
+                <td>Encuesta Helados</td>
+                <td>Esta encuesta tiene un custionario sobre la preferencia entre helados artesanales y helados industriales</td>
             </tr>
-		</tbody>
-      </table>
+            <tr>
+                <td>2</td>
+                <td>Coca vs Manaos</td>
+                <td>Preferencias del publico comparando ambas gaseosas</td>
+            </tr>
+        </tbody>
+    </table>
+	
+</div>
 
 </div>
 <div class="mensajes">
