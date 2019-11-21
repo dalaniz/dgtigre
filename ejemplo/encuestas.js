@@ -2,7 +2,7 @@ $(document).ready(function(){
   
   // On page load: datatable
   var table_companies = $('#table_companies').dataTable({
-    "ajax": "tablajquery.php?job=get_companies",
+    "ajax": "encuestasdao.php?job=get_companies",
     "columns": [
       { "data": "rank" },
       { "data": "company_name",   "sClass": "company_name" },
@@ -142,7 +142,7 @@ $(document).ready(function(){
       show_loading_message();
       var form_data = $('#form_company').serialize();
       var request   = $.ajax({
-        url:          'tablajquery.php?job=add_company',
+        url:          'encuestasdao.php?job=add_company',
         cache:        false,
         data:         form_data,
         dataType:     'json',
@@ -176,7 +176,7 @@ $(document).ready(function(){
     show_loading_message();
     var id      = $(this).data('id');
     var request = $.ajax({
-      url:          'tablajquery.php?job=get_company',
+      url:          'encuestasdao.php?job=get_company',
       cache:        false,
       data:         'id=' + id,
       dataType:     'json',
@@ -224,7 +224,7 @@ $(document).ready(function(){
       var id        = $('#form_company').attr('data-id');
       var form_data = $('#form_company').serialize();
       var request   = $.ajax({
-        url:          'tablajquery.php?job=edit_company&id=' + id,
+        url:          'encuestasdao.php?job=edit_company&id=' + id,
         cache:        false,
         data:         form_data,
         dataType:     'json',
@@ -259,7 +259,7 @@ $(document).ready(function(){
       show_loading_message();
       var id      = $(this).data('id');
       var request = $.ajax({
-        url:          'tablajquery.php?job=delete_company&id=' + id,
+        url:          'encuestasdao.php?job=delete_company&id=' + id,
         cache:        false,
         dataType:     'json',
         contentType:  'application/json; charset=utf-8',
