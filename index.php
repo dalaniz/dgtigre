@@ -23,13 +23,25 @@ session_destroy(); // limpia lo que hubiera en la session
 		<label>INGRESO</label>
 		<label>Riper</label>
 	</div>
-	<div class="opcion-login" onclick='window.location.href = "ejemplo/login.php";'>
+	<div class="opcion-login" onclick='window.location.href = "Ramallo/login.php";'>
 		<label>INGRESO</label>
-		<label>EJEMPLO</label>
+		<label>Ramallo</label>
 	</div>
-	<div class="opcion-login" onclick='window.location.href = "ejemplo/login.php";'>
+	<div class="opcion-login" onclick='window.location.href = "Sakamoto/login.php";'>
 		<label>INGRESO</label>
-		<label>EJEMPLO</label>
+		<label>Sakamoto</label>
+	</div>
+	<div class="opcion-login" onclick='window.location.href = "Tobias/login.php";'>
+		<label>INGRESO</label>
+		<label>Tobias</label>
+	</div>
+	<div class="opcion-login" onclick='window.location.href = "sanchez/login.php";'>
+		<label>INGRESO</label>
+		<label>sanchez</label>
+	</div>
+	<div class="opcion-login" onclick='window.location.href = "ivan salto/login.php";'>
+		<label>INGRESO</label>
+		<label>Ivan Salto</label>
 	</div>
 	<div class="opcion-login">
 		<label>INGRESO</label>
