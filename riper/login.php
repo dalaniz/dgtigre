@@ -20,7 +20,7 @@ $msg = isset($_GET['msg']) ? $_GET['msg'] : "";
 		color: DodgerBlue; 
 		font-size: 20px; 
 		font-weight: bold;
-		/*border-radius: 25px;*/
+		border-radius: 50px;
 	}
 	.opcion-login:hover {
 		background-color: #d8d0d0;		
@@ -41,10 +41,10 @@ $msg = isset($_GET['msg']) ? $_GET['msg'] : "";
 		<label style="height: 40px; background-color: black; color: DodgerBlue;">INGRESO</label>
 		
 		<label>Usuario</label>
-		<input type="text" id="user" name="user" />
+		<input style="border-radius:50px" type="text" id="user" name="user" />
 		<label>Contrase&ntilde;a</label>
-		<input type="password" id="pwd" name="pwd"/>
-		<input type="submit" value="ACEPTAR" id="loginButton" />
+		<input style="border-radius:50px" type="password" id="pwd" name="pwd"/>
+		<input style="border-radius:50px; margin:10px" type="submit" value="ACEPTAR" id="loginButton" />
 		<a style="color: white; font-size:15px;" href="registro.php">Registrarse</a>
 	</div>
 	</form>
