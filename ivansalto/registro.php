@@ -18,12 +18,12 @@ $msg = isset($_GET['msg']) ? $_GET['msg'] : "";
 		flex-direction: column;
 		justify-content: center; 
 		align-items: center;
-		height: 250px;
+		height: 500px;
 		width: 250px;
-		background-color: black;
+		background-color: black ;
 		color: DodgerBlue; 
 		font-size: 20px; 
-		font-weight: bold;
+		font-weight: bold black;
 		/*border-radius: 25px;*/
 	}
 	.opcion-login:hover {
@@ -51,13 +51,13 @@ function validarPwd() {
 
 <body>
 
-<div class="titulo_principal"> <label style="background-color: black; color: DodgerBlue; font-size: 35px; font-weight: bold;">DIGIT@LERS - TIGRE</label>
+<div class="titulo_principal"> <label style="background-color: black; color: white; font-size: 35px; font-weight: bold;">DIGIT@LERS - TIGRE</label>
 </div>
 
 <div class="workarea">
 	<form action="insert_user.php" method="POST" id="form_registro" >
 	<div class="cuadro-login">
-		<label style="height: 40px; background-color: black; color: DodgerBlue;">INGRESO</label>
+		<label style="height: 70px; background-color: black; color: white;">INGRESO</label>
 		
 		<label>Usuario</label>
 		<input type="text" id="user" name="user" />
