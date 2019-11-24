@@ -18,6 +18,7 @@ body{
 	transform: translate(-50%, -50%);
 	box-sizing: border-box;
 	padding: 30px 50px;
+	border-radius: 50px;
 }
 .login-box .logo{
 	width: 200px;
