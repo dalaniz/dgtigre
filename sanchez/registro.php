@@ -10,26 +10,7 @@ $msg = isset($_GET['msg']) ? $_GET['msg'] : "";
 <head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../css/common.css" type="text/css" />
-
-<style>
-	.cuadro-login {
-		display: flex;
-		flex-direction: column;
-		justify-content: center; 
-		align-items: center;
-		height: 250px;
-		width: 250px;
-		background-color: black;
-		color: DodgerBlue; 
-		font-size: 20px; 
-		font-weight: bold;
-		/*border-radius: 25px;*/
-	}
-	.opcion-login:hover {
-		background-color: #d8d0d0;		
-	}
-</style>
+<link rel="stylesheet" href="../css/sanchez.css" type="text/css" />
 
 <script>
 function validarPwd() {
@@ -51,23 +32,23 @@ function validarPwd() {
 
 <body>
 
-<div class="titulo_principal"> <label style="background-color: black; color: DodgerBlue; font-size: 35px; font-weight: bold;">DIGIT@LERS - TIGRE</label>
+<div class="titulo_principal"> <label>DIGIT@LERS - TIGRE</label>
 </div>
 
-<div class="workarea">
+<div class="login-box">
+	<img class="logo" src="../img/logo.svg" alt="logo digitalers">
+	<h1>Registrarse</h1>
 	<form action="insert_user.php" method="POST" id="form_registro" >
-	<div class="cuadro-login">
-		<label style="height: 40px; background-color: black; color: DodgerBlue;">INGRESO</label>
-		
+			
 		<label>Usuario</label>
-		<input type="text" id="user" name="user" />
+		<input type="text" id="user" name="user" placeholder="Ingrese Usuario"/>
 		<label>Contrase&ntilde;a</label>
-		<input type="password" id="pwd" name="pwd"/>
+		<input type="password" id="pwd" name="pwd" placeholder="Ingrese Contraseña"/>
 		<label>Repetir Contrase&ntilde;a</label>
-		<input type="password" id="pwd2" name="pwd2"/>
-		<input type="button" value="ACEPTAR" id="loginButton"  onclick="validarPwd();" />
-		<a style="color: white; font-size:15px;" href="registro.php">Registrarse</a>
-	</div>
+		<input type="password" id="pwd2" name="pwd2" placeholder="Repita la Contraseña"/>
+		<input type="button" value="ACEPTAR" id="loginButton"  onclick="validarPwd();" /><br><br>
+		<a href="login.php">Volver al login</a>
+	
 	</form>
 </div>
 

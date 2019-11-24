@@ -1,0 +1,145 @@
+body{
+	background-color: black;
+	margin: 0;
+	padding: 0;
+	background: url(../img/fondo.jpg);
+	background-size: cover;
+	font-family: sans-serif;
+	height: 100vh;
+}
+.login-box{
+	width: 320px;
+	height: 450px;
+	background: #000;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 30px 50px;
+}
+.login-box .logo{
+	width: 200px;
+	height: 100px;	
+	position: absolute;
+	top: 350px;
+	left: 20%;
+}
+.login-box h1{
+	margin: 0;
+	padding: 0 0 30px;
+	text-align: center;
+	font-size: 22px;	
+}
+.login-box label{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	display: block;
+}
+.login-box .input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.login-box input[type="text"],
+.login-box input[type="password"]{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+.login-box input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #b00f22;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+.login-box input[type="button"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #b00f22;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+.login-box a{
+	text-decoration: none;
+	font-size: 20px;
+	line-height: 20px;
+	color: darkgrey;
+}
+.login-box a:hover{
+	color: #fff;	
+}
+.titulo_principal label{
+	background-color: black; 
+	color: #fff; 
+	font-size: 35px; 
+	font-weight: bold;
+	display: block;
+	text-align: center;
+}
+.mensajes {
+	background-color: grey;
+	width: 100%;
+	top: 92%;	
+	position: absolute;	
+	box-sizing: border-box;
+	padding: 30px 50px;
+	text-align: center;
+}
+.workarea {
+	height: calc(100vh - 100px);
+	/* background-color: green; */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.opcion-login {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	width: 180px;
+	background-color: black;
+	color: #fff; 
+	font-size: 20px; 
+	font-weight: bold;
+	border-radius: 25px;
+}
+.menu {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	height: 50px;
+	background-color: black;
+}
+
+.menu_option {
+	display: flex; 
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	height: 50px;
+	/*width: 250px;*/		
+	color: #fff; 
+	font-size: 20px; 
+	font-weight: bold;
+	border-radius: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin:20px;
+}
+.menu_option:hover {
+	color: darkgrey;
+}

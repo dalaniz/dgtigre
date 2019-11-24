@@ -18,8 +18,8 @@ $msg = "";
 <div class="workarea">
 
 	<div class="opcion-login">
-		<label>BIENVENIDO!!</label>
-		<label><?php echo($_SESSION['user']['usuario']); ?></label>
+		<label>OPCI&Oacute;N A&Uacute;N NO</label>
+		<label>IMPLEMENTADA</label>
 	</div>
 
 </div>
