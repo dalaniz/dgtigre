@@ -15,7 +15,7 @@ $msg = isset($_GET['msg']) ? $_GET['msg'] : "";
 		flex-direction: column;
 		justify-content: center; 
 		align-items: center;
-		height: 250px;
+		height: 300px;
 		width: 250px;
 		background-color: #eb1368;
 		color: DodgerBlue; 
@@ -24,6 +24,11 @@ $msg = isset($_GET['msg']) ? $_GET['msg'] : "";
 		border-radius: 50px;
 		font-family: 'Merriweather', serif;
 		box-shadow: 10px 10px 8px #888888;
+		padding-bottom: 50px;
+	}
+
+	.cuadro-login label {
+	
 	}
 	.opcion-login:hover {
 		background-color: #d8d0d0;		
@@ -76,6 +81,14 @@ a:hover {
     text-decoration: none;
     color: #ddd;
 }
+
+.logo {
+	width: 175px;
+	height: 100px;	
+	position: absolute;
+	top: 430px;
+	
+}
 </style>
 
 
@@ -89,6 +102,7 @@ a:hover {
 <div class="workarea">
 	<form action="check_user.php" method="POST" >
 	<div class="cuadro-login">
+	<img class="logo" src="../img/logo.svg" alt="logo digitalers">
 		<label style="height: 40px; background-color: #eb1368; color: black; font-size:20px; font-weight:bold;">INGRESO</label>
 		
 		<label style="color:black">Usuario</label>
@@ -97,6 +111,7 @@ a:hover {
 		<input style="border-radius:50px" type="password" id="pwd" name="pwd"/>
 		<input style="border-radius:50px; margin:10px; font-weight:bold" type="submit" value="ACEPTAR" id="loginButton" />
 		<a style="color: white; font-size:15px;" href="registro.php">Registrarse</a>
+		
 	</div>
 	</form>
 </div>
