@@ -89,12 +89,18 @@ a:hover {
 	top: 400px;
 	
 }
+
+body {
+	style="background-color: #13eb96; color: black"
+}
+
+
 </style>
 
 
 </head>
 
-<body style="background-color: #13eb96; color: black">
+<body>
 
 <div class="titulo_principal" style="background-color: #eb1368"> <label style="background-color: #eb1368; color: black; font-size: 35px; font-weight: bold; font-family:'Merriweather', serif;">DIGIT@LERS - TIGRE</label>
 </div>
