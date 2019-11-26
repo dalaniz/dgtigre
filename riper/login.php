@@ -86,7 +86,7 @@ a:hover {
 	width: 175px;
 	height: 100px;	
 	position: absolute;
-	top: 430px;
+	top: 400px;
 	
 }
 </style>
