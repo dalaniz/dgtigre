@@ -19,11 +19,7 @@ $msg = "";
     <script charset="utf-8" src="//cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.min.js"></script>
     <script charset="utf-8" src="encuestas.js"></script>
 
- <script type="text/javascript" class="init">
-  $(document).ready(function() {
-    $('#example').DataTable();
-	} );
-  </script>
+
   
 	</head>
   <body>
@@ -32,7 +28,7 @@ $msg = "";
 	<?php include_once("menu.php"); ?>
 <div class="workarea_v">  
 <div style="background-color: #d8d0d0;"> 
-<table id="example" class="display" style="width:100%">
+<table id="example" class="cell-border" style="width:100%">
         <thead>
             <tr>
                 <th>#Id</th>
