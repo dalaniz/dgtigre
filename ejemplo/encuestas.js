@@ -13,4 +13,30 @@
 	
 	);
 	
+	$('#panel_form').hide();
+	$('#panel_grilla').show();
+	
+	  // Add button
+  $(document).on('click', '#button_add', function(e){
+    //$('#form_company button').text('Add company');
+	$('#panel_form').show();
+	$('#panel_grilla').hide();
+  });
+
+  // Add button
+  $(document).on('click', '#button_grabar', function(e){
+    //$('#form_company button').text('Add company');
+	$('#panel_form').hide();
+	$('#panel_grilla').show();
+  });
+
+	
+  // Escape keyboard key
+  $(document).keyup(function(e){
+    if (e.keyCode == 27){
+		$('#panel_form').hide();
+		$('#panel_grilla').show();
+    }
+  });	
+	
 	} );

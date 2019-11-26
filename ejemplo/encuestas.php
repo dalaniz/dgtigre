@@ -27,30 +27,54 @@ $msg = "";
 
 	<?php include_once("menu.php"); ?>
 <div class="workarea_v">  
-<div style="background-color: #d8d0d0;"> 
-<table id="example" class="cell-border" style="width:100%">
-        <thead>
-            <tr>
-                <th>#Id</th>
-                <th>Nombre</th>
-                <th>Descripci&oacute;n</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Encuesta Helados</td>
-                <td>Esta encuesta tiene un custionario sobre la preferencia entre helados artesanales y helados industriales</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Coca vs Manaos</td>
-                <td>Preferencias del publico comparando ambas gaseosas</td>
-            </tr>
-        </tbody>
-    </table>
-	
-</div>
+	<div id="panel_grilla" style="background-color: #06529a; height: 300px; padding: 10px;" > 
+	<button type="button" class="button" id="button_add">Nueva Encuesta</button>
+	<table id="example" class="cell-border" style="width:100%">
+			<thead>
+				<tr>
+					<th>#Id</th>
+					<th>Nombre</th>
+					<th>Descripci&oacute;n</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Encuesta Helados</td>
+					<td>Esta encuesta tiene un custionario sobre la preferencia entre helados artesanales y helados industriales</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Coca vs Manaos</td>
+					<td>Preferencias del publico comparando ambas gaseosas</td>
+				</tr>
+			</tbody>
+		</table>
+		
+	</div>
+
+    <div id="panel_form" style="background-color: #06529a;  width: 450px; padding: 10px;">
+        <form class="form add" id="form_company" data-id="" novalidate>
+          <div class="input_container">
+            <label for="company_name">Nombre de encuesta: <span class="required">*</span></label>
+            <div class="field_container">
+              <input type="text" class="text" name="nombre_encuesta" id="nombre_encuesta" value="" required>
+            </div>
+          </div>
+          <div class="input_container">
+            <label for="industries">Descripci&oacute;n: <span class="required">*</span></label>
+            <div class="field_container">
+			  <textarea rows="4" cols="50" name="descrip_encuesta" id="descrip_encuesta" value="" required>
+			  </textarea>
+            </div>
+          </div>
+          <div class="button_container">
+            <button type="submit" id="button_grabar">Grabar</button>
+          </div>
+        </form>
+        
+    </div>
+
 
 </div>
 <div class="mensajes">
