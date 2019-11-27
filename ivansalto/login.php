@@ -16,7 +16,7 @@ $msg = isset($_GET['msg']) ? $_GET['msg'] : "";
 		align-items: center;
 		height: 250px;
 		width: 450px;
-		background-color: black;
+		background-color: white;
 		color: DodgerBlue; 
 		font-size: 20px; 
 		font-weight: bold;
