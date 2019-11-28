@@ -18,7 +18,9 @@
 		"columns": [
 		  { "data": "id" },
 		  { "data": "nombre" },
-		  { "data": "descripcion" }
+		  { "data": "descripcion" },
+		  { "data": null, "defaultContent":  "<button>borrar</button>" },
+		  { "data": null, "defaultContent":  "<button class='button_edit'>editar</button>" }
 		],
 			
 	}// aca finaliza la parametrizacion del datatable
@@ -28,12 +30,19 @@
 	$('#panel_form').hide();
 	$('#panel_grilla').show();
 	
-	  // Add button
+	  // boton agregar
   $(document).on('click', '#button_add', function(e){
     //$('#form_company button').text('Add company');
 	$('#panel_form').show();
 	$('#panel_grilla').hide();
   });
+
+  // boton editar
+  $(document).on('click', '.button_edit', function(e){
+		var table =$('#example').DataTable();
+		var data_row = table.row($(this).closest('tr')).data();
+		alert("editando registro ID: "+data_row["0"]);
+	});
 
   // Add button
   $(document).on('click', '#button_grabar', function(e){
@@ -50,5 +59,17 @@
 		$('#panel_grilla').show();
     }
   });	
+
+
+function editar() {
+    var table =$('#example').DataTable();
+    var data = table.row( this ).data();
+	alert("editando");
+	console.log(data);
+}
+  
+} );
+
+
 	
-	} );
+ 

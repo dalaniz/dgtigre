@@ -35,6 +35,8 @@ $msg = "";
 					<th>#Id</th>
 					<th>Nombre</th>
 					<th>Descripci&oacute;n</th>
+					<th>&nbsp;</th>
+					<th>&nbsp;</th>
 				</tr>
 			</thead>
 			<tbody>
