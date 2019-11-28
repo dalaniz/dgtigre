@@ -38,16 +38,7 @@ $msg = "";
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td>1</td>
-					<td>Encuesta Helados</td>
-					<td>Esta encuesta tiene un custionario sobre la preferencia entre helados artesanales y helados industriales</td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>Coca vs Manaos</td>
-					<td>Preferencias del publico comparando ambas gaseosas</td>
-				</tr>
+
 			</tbody>
 		</table>
 		
