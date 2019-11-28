@@ -14,9 +14,9 @@ $msg = isset($_GET['msg']) ? $_GET['msg'] : "";
 		flex-direction: column;
 		justify-content: center; 
 		align-items: center;
-		height: 250px;
-		width: 450px;
-		background-color: white;
+		height: 150px;
+		width: 250px;
+		background-color: black;
 		color: DodgerBlue; 
 		font-size: 20px; 
 		font-weight: bold;
@@ -32,17 +32,17 @@ $msg = isset($_GET['msg']) ? $_GET['msg'] : "";
 
 <body>
 
-<div class="titulo_principal"> <label style="background-color: black; color: DodgerBlue; font-size: 35px; font-weight: bold;">DIGIT@LERS - TIGRE</label>
+<div class="titulo_principal"> <label style="background-color: black; color: white; font-size: 35px; font-weight: bold;">DIGIT@LERS - TIGRE</label>
 </div>
 
 <div class="workarea">
 	<form action="check_user.php" method="POST" >
 	<div class="cuadro-login">
-		<label style="height: 40px; background-color: black; color: DodgerBlue;">INGRESO</label>
+		<label style="color: white;">INGRESO</label>
 		
-		<label>Usuario</label>
+		<label style="color: white;">Usuario</label>
 		<input type="text" id="user" name="user" />
-		<label>Contrase&ntilde;a</label>
+		<label style="color: white;">Contrase&ntilde;a</label>
 		<input type="password" id="pwd" name="pwd"/>
 		<input type="submit" value="ACEPTAR" id="loginButton" />
 		<a style="color: white; font-size:15px;" href="registro.php">Registrarse</a>
