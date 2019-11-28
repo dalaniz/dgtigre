@@ -49,13 +49,13 @@ $msg = "";
     <div id="panel_form" style="background-color: #06529a;  width: 450px; padding: 10px;">
         <form class="form add" id="form_company" data-id="" novalidate>
           <div class="input_container">
-            <label for="company_name">Nombre de encuesta: <span class="required">*</span></label>
+            <label for="nombre_encuesta">Nombre de encuesta: <span class="required">*</span></label>
             <div class="field_container">
               <input type="text" class="text" name="nombre_encuesta" id="nombre_encuesta" value="" required>
             </div>
           </div>
           <div class="input_container">
-            <label for="industries">Descripci&oacute;n: <span class="required">*</span></label>
+            <label for="descrip_encuesta">Descripci&oacute;n: <span class="required">*</span></label>
             <div class="field_container">
 			  <textarea rows="4" cols="50" name="descrip_encuesta" id="descrip_encuesta" value="" required>
 			  </textarea>
