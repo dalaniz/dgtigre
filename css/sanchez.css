@@ -89,13 +89,14 @@ body{
 	text-align: center;
 }
 .mensajes {
-	background-color: grey;
+	background-color: #000;
 	width: 100%;
 	top: 92%;	
 	position: absolute;	
 	box-sizing: border-box;
 	padding: 30px 50px;
 	text-align: center;
+	color: #fff;
 }
 .workarea {
 	height: calc(100vh - 100px);

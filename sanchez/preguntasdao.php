@@ -74,9 +74,38 @@ if ($accion != ''){
 			$respuesta["mensaje"] = "Hubo un error efectuando la consulta";
 		}
 
-	}elseif ($accion == 'add'){
+	}elseif ($accion == 'get_byId'){
+    
+    // Get pregunta
+    if ($id == ''){
+      $respuesta["resultado"]  = 'error';
+      $respuesta["message"] = 'id missing';
+    } else {
+      $query = "SELECT * FROM question_tr WHERE id = '" . mysqli_real_escape_string($db_connection, $id) . "'";
+      $query = mysqli_query($db_connection, $query);
+      if (!$query){
+        $respuesta["resultado"]  = 'error';
+        $respuesta["message"] = 'query error';
+      } else {
+        $respuesta["resultado"]  = 'success';
+        $respuesta["message"] = 'query success';
+        while ($question = mysqli_fetch_array($query)){
+          $mysql_data[] = array(
+            "id"          		=> $question['id'],
+            "usuario"  	  		=> $question['usuario'],
+            "pregunta"    		=> $question['pregunta'],
+            "respuesta1"  		=> $question['respuesta1'],
+            "respuesta2"  		=> $question['respuesta2'],
+            "respuestacorrecta" => $question['respuestacorrecta'],
+            "nota"    			=> $question['nota']            
+          );
+        }
+      }
+    }
+  
+  }elseif ($accion == 'add'){
 		
-		// Add company
+		// Add pregunta
 		$query = "INSERT INTO question_tr SET ";
 		if (isset($_GET['usuario']))      		{ $query .= "usuario     	 	= '" . mysqli_real_escape_string($db_connection, $_GET['usuario'])      . "', "; }
 		if (isset($_GET['pregunta'])) 	  		{ $query .= "pregunta 			= '" . mysqli_real_escape_string($db_connection, $_GET['pregunta']) 	. "', "; }
@@ -94,6 +123,50 @@ if ($accion != ''){
 		  $respuesta["message"] = 'query success';
 		}
 	  
+	}elseif ($accion == 'edit'){
+    
+		// Edit pregunta
+		if ($id == ''){
+			$respuesta["resultado"]  = 'error';
+			$respuesta["message"] = 'id missing';
+		} else {
+			$query = "UPDATE question_tr SET ";
+			if (isset($_GET['usuario']))      		{ $query .= "usuario     	 	= '" . mysqli_real_escape_string($db_connection, $_GET['usuario'])      . "', "; }
+			if (isset($_GET['pregunta'])) 	  		{ $query .= "pregunta 			= '" . mysqli_real_escape_string($db_connection, $_GET['pregunta']) 	. "', "; }
+			if (isset($_GET['respuesta1'])) 		{ $query .= "respuesta1   		= '" . mysqli_real_escape_string($db_connection, $_GET['respuesta1'])   . "', "; }
+			if (isset($_GET['respuesta2']))   		{ $query .= "respuesta2   		= '" . mysqli_real_escape_string($db_connection, $_GET['respuesta2'])   . "', "; }
+			if (isset($_GET['respuestacorrecta']))  { $query .= "respuestacorrecta  = '" . mysqli_real_escape_string($db_connection, $_GET['respuestacorrecta'])  . "', "; }
+			if (isset($_GET['nota']))    			{ $query .= "nota    			= '" . mysqli_real_escape_string($db_connection, $_GET['nota'])    		. "'";   }
+			$query .= "WHERE id = '" . mysqli_real_escape_string($db_connection, $id) . "'";
+			$query  = mysqli_query($db_connection, $query);
+			if (!$query){
+				$respuesta["resultado"]  = 'error';
+				$respuesta["message"] = 'query error';
+			} else {
+				$respuesta["resultado"]  = 'success';
+				$respuesta["message"] = 'query success';
+				}
+		}    
+	}elseif ($accion == 'del'){
+  
+    //Delete company
+		if ($id == ''){
+		  $respuesta["resultado"]  = 'error';
+		  $respuesta["message"] = 'id missing';
+		} else {
+		  $query = "DELETE FROM question_tr WHERE id = '" . mysqli_real_escape_string($db_connection, $id) . "'";
+		  $query = mysqli_query($db_connection, $query);
+		  if (!$query){
+			$respuesta["resultado"] = 'error';
+			$respuesta["message"]   = 'query error';			
+		  } else {
+			$respuesta["resultado"] = 'success';
+			$respuesta["message"]   = 'query success';			
+			//$query = "ALTER TABLE question_tr MODIFY  id INT(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = ".mysqli_real_escape_string($db_connection, $id);
+			//$query = mysqli_query($db_connection, $query);
+		  }
+		}
+	
 	}
 	// Close database connection
 	mysqli_close($db_connection);

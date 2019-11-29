@@ -1,0 +1,70 @@
+.panel-principal{
+	width: 1200px;
+	height: 500px;
+	background: #000;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	color: #fff;
+}
+/*Para panel-tabla*/
+#panel-tabla{
+	width: 1100px;
+	height:400px;	
+	text-align: center;
+	top: 60%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+table.dataTable th {
+	border: 1px solid;
+	border-radius: 10%;
+}
+table.dataTable tbody td {
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	border: 1px solid;
+	border-radius: 10%;
+}
+#btn-agregar{
+	height: 50px;
+	border-radius: 10%;
+	position: absolute;
+	left: 0%;
+	top: -20%;
+}
+.btn_del{
+	background-image: url(btn_delete_img.jpg);
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+	background-position: center;
+	border-radius: 15%;
+}
+.btn_edit{
+	background-image: url(btn_editar_img.jpg);
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 30px;
+	background-position: center;
+	border-radius: 15%;
+}
+
+/**para form agregar*/
+#btn-grabar-form, #btn-volver-form, #btn-editar-form{
+	height: 50px;
+	width: 100px;
+	border-radius: 10%;
+}
+#tabla-ordenada {
+	width: 1100px;
+	height:400px;	
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}

@@ -6,7 +6,7 @@ $msg = isset($_GET['msg']) ? $_GET['msg'] : "";
 <head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../css/sanchez.css" type="text/css" />
+<link rel="stylesheet" href="../css/sanchez.css?v=<?php echo(rand()); ?>" type="text/css" />
 
 </head>
 
