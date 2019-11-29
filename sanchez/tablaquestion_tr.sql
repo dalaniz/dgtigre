@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 29-11-2019 a las 19:24:26
+-- Tiempo de generación: 29-11-2019 a las 20:21:31
 -- Versión del servidor: 10.4.8-MariaDB
 -- Versión de PHP: 7.3.11
 
@@ -43,11 +43,10 @@ CREATE TABLE `question_tr` (
 --
 
 INSERT INTO `question_tr` (`id`, `usuario`, `pregunta`, `respuesta1`, `respuesta2`, `respuestacorrecta`, `nota`) VALUES
-(1, 'usuario1', 'pregunta', 'respuesta falsa', 'otra respuesta falsa', 'respuesta correcta', 3),
-(2, 'Usuario2', 'Segunda Pregunta ', 'Respuesta Falsa', 'Respuesta Falsa', 'Respuesta Correcta', 2),
-(3, 'Usuario3', 'Tercera Pregunta ', 'Respuesta Falsa', 'Respuesta Falsa', 'Respuesta Correcta', 3),
-(4, 'Usuario4', 'Cuarta Pregunta ', 'Respuesta Falsa', 'Respuesta Falsa', 'Respuesta Correcta', 4),
-(5, 'Usuario5', 'Quinta Pregunta', 'Respuesta Falsa', 'Respuesta Falsa', 'Respuesta Correcta', 5);
+(1, 'Enrique', '¿Qué etiqueta utilizamos para insertar una línea horizontal?', 'br', 'line', 'hr', 2),
+(2, 'Enrique', 'Elija la etiqueta que nos dá el título más grande', 'h6', 'big', 'h1', 3),
+(3, 'Enrique', 'La etiqueta center', 'Permite insertar un texto como título.', 'Permite seleccionar el texto.', 'Permite centrar el texto.', 2),
+(4, 'Enrique', 'El title se encuentra dentro del body en una página web', 'No existe la etiqueta title', 'Verdadero', 'Falso', 1);
 
 --
 -- Índices para tablas volcadas
@@ -67,7 +66,7 @@ ALTER TABLE `question_tr`
 -- AUTO_INCREMENT de la tabla `question_tr`
 --
 ALTER TABLE `question_tr`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

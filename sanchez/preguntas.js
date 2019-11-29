@@ -17,6 +17,19 @@ $(document).ready(function(){
 		  { "data": null, "defaultContent":  "<button class='btn_del'></button>" },
 		  { "data": null, "defaultContent":  "<button class='btn_edit'></button>" }
 		],
+		"lengthMenu": [[4, 1, -1], [4, 1, "All"]],
+		"oLanguage": {
+		  "oPaginate": {
+			"sFirst":       " ",
+			"sPrevious":    " ",
+			"sNext":        " ",
+			"sLast":        " ",
+		  },
+		  "sLengthMenu":    "Records per page: _MENU_",
+		  "sInfo":          "Total of _TOTAL_ records (showing _START_ to _END_)",
+		  "sInfoFiltered":  "(filtered from _MAX_ total records)"
+    }
+		
 				
 	}
 	);
