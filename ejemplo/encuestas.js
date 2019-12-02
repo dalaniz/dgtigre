@@ -116,12 +116,11 @@
 	  show_message('Add request failed', 'error');
 	}
 	});
+	
 	request.fail(function(jqXHR, textStatus){
 	hide_loading_message();
 	show_message('Add request failed: ' + textStatus, 'error');
 	});
-    }	
-	
 	
 	$('#panel_form').hide();
 	$('#panel_grilla').show();

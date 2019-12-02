@@ -173,6 +173,25 @@ if ($accion != ''){
 }
 
 // Convert PHP array to JSON array
+$respuesta = utf8_string_array_encode($respuesta);
 $json_data = json_encode($respuesta);
+//die( "asdfas".json_last_error());
 die($json_data);
+
+function utf8_string_array_encode(&$array){
+    $func = function(&$value,&$key){
+		//mb_detect_encoding($str, 'UTF-8', true);
+        if(is_string($value) and !mb_detect_encoding($value, 'UTF-8',true) ){
+            $value = utf8_encode($value);
+        }
+        if(is_string($key)  and !mb_detect_encoding($key, 'UTF-8',true)){
+            $key = utf8_encode($key);
+        }
+        if(is_array($value)){
+            utf8_string_array_encode($value);
+        }
+    };
+    array_walk($array,$func);
+    return $array;
+}
 ?>
