@@ -18,11 +18,11 @@ $msg = isset($_GET['msg']) ? $_GET['msg'] : "";
 		flex-direction: column;
 		justify-content: center; 
 		align-items: center;
-		height: 500px;
+		height: 200px;
 		width: 250px;
 		background-color: black ;
 		color: DodgerBlue; 
-		font-size: 20px; 
+		font-size: 17px; 
 		font-weight: bold black;
 		/*border-radius: 25px;*/
 	}
