@@ -1,11 +1,11 @@
 <?php
 include_once("../inc/conexion.php");
 
-// Database details
-$db_server   = 'localhost';
-$db_username = 'root';
-$db_password = '';
-$db_name     = 'tpfinal';
+// Database details asigno estas variables con los valores de conexion.php provenientes del include
+$db_server   = $server;
+$db_username = $user;
+$db_password = $passwd;
+$db_name     = $database;
 
 // acciones posibles
 // get_all : leer todas las encuestas
