@@ -1,5 +1,5 @@
 <?php
-//error_reporting(E_ALL & ~E_NOTICE);
+error_reporting(E_ALL & ~E_NOTICE);
 
 include_once("../inc/conexion.php");
 
@@ -27,6 +27,6 @@ if ( !$row ) {  // si no hubo resultado
 }
 // dado que vino un resultado, el usuario existe. Lo incorporo a la session  
 session_start();
-$row[tipo] = 'ejemplo'; // tipo usuario ejemplo lo agrego al array que vino de resultado desde base de datos
+$row["tipo"] = 'ejemplo'; // tipo usuario ejemplo lo agrego al array que vino de resultado desde base de datos
 $_SESSION["user"] = $row; // agrego el array con los datos del usuario en la sesion.
 header('Location: bienvenido.php?msg='); // como está todo ok lo redirecciono al menu principal para que muestre sus opciones
