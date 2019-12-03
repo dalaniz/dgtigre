@@ -15,10 +15,6 @@ session_destroy(); // limpia lo que hubiera en la session
 <div class="titulo_principal"> <label style="background-color: black; color: DodgerBlue; font-size: 35px; font-weight: bold;">DIGIT@LERS - TIGRE</label>
 </div>
 <div class="workarea">
-	<div class="opcion-login" onclick='window.location.href = "ejemplo/login.php";'>
-		<label>INGRESO</label>
-		<label>EJEMPLO</label>
-	</div>
 	<div class="opcion-login" onclick='window.location.href = "riper/login.php";'>
 		<label>INGRESO</label>
 		<label>Riper</label>
@@ -37,11 +33,16 @@ session_destroy(); // limpia lo que hubiera en la session
 	</div>
 	<div class="opcion-login" onclick='window.location.href = "sanchez/login.php";'>
 		<label>INGRESO</label>
-		<label>sanchez</label>
+		<label>Sanchez</label>
 	</div>
 	<div class="opcion-login" onclick='window.location.href = "ivansalto/login.php";'>
 		<label>INGRESO</label>
 		<label>Ivan Salto</label>
+	</div>
+<!--
+	<div class="opcion-login" onclick='window.location.href = "ejemplo/login.php";'>
+		<label>INGRESO</label>
+		<label>EJEMPLO</label>
 	</div>
 	<div class="opcion-login">
 		<label>INGRESO</label>
@@ -59,6 +60,7 @@ session_destroy(); // limpia lo que hubiera en la session
 		<label>INGRESO</label>
 		<label>ALUMNO</label>
 	</div>
+-->
 </div>
 
 </body>
