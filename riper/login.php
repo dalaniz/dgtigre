@@ -86,7 +86,7 @@ a:hover {
 	width: 175px;
 	height: 100px;	
 	position: absolute;
-	top: 400px;
+	top: 420px;
 	
 }
 

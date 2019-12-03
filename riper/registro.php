@@ -118,7 +118,7 @@ function validarPwd() {
 		<label>Repetir Contrase&ntilde;a</label>
 		<input style="border-radius:50px;" type="password" id="pwd2" name="pwd2"/>
 		<input style="border-radius:50px; margin:10px; font-weight:bold" type="button" value="ACEPTAR" id="loginButton"  onclick="validarPwd();" />
-		<a style="color: white; font-size:15px;" href="registro.php">Registrarse</a>
+		<a style="color: white; font-size:15px;" href="login.php">Volver</a>
 	</div>
 	</form>
 </div>
