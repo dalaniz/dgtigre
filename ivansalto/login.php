@@ -11,7 +11,7 @@ $msg = isset($_GET['msg']) ? $_GET['msg'] : "";
 
 <body>
 
-<div class="titulo_principal"> <label>titulo de prueba - TIGRE</label>
+<div class="titulo_principal"> <label>DIGIT@LERS - TIGRE</label>
 </div>
 
 <div class="login-box">

@@ -24,7 +24,7 @@ $msg = isset($_GET['msg']) ? $_GET['msg'] : "";
 		color: DodgerBlue; 
 		font-size: 17px; 
 		font-weight: bold black;
-		/*border-radius: 25px;*/
+		border-radius: 25px;
 	}
 	.opcion-login:hover {
 		background-color: #d8d0d0;		
@@ -48,6 +48,13 @@ function validarPwd() {
 </script>
 
 </head>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/salto.css?v=<?php echo(rand()); ?>" type="text/css" />
+
+</head>
+
 
 <body>
 
@@ -60,8 +67,8 @@ function validarPwd() {
 		<label style="height: 70px; background-color: black; color: white;">INGRESO</label>
 		
 		<label>Usuario</label>
-		<input type="text" id="user" name="user" />
-		<label>Contrase&ntilde;a</label>
+		<input type="text" id="user" name="user"/>
+		<label>Contraseña</label>
 		<input type="password" id="pwd" name="pwd"/>
 		<label>Repetir Contrase&ntilde;a</label>
 		<input type="password" id="pwd2" name="pwd2"/>
